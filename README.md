@@ -46,3 +46,20 @@
 Image proof from local pc.
 
 ![Alt text](images/5.png)
+
+---
+
+### 2 Extract all subtask issue IDs
+```jq
+[.fields.subtasks[].key]
+```
+**Explanation**: .fields.subtasks (array of subtasks) and extracts the key of each.
+
+![Alt text](images/6.png)
+
+![Alt text](images/7.png)
+
+---
+
+## Exercise #2 – Jira & GitHub Integration
+
