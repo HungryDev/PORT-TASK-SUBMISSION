@@ -18,3 +18,31 @@
 .spec.replicas
 ```
 **Explanation**: Retrieves the integer value of the current replica count from a Kubernetes Deployment object.
+
+![Alt text](images/1.png)
+
+![Alt text](images/2.png)
+
+---
+
+### 1(b) Extract deployment strategy
+```jq
+.spec.strategy.type
+```
+**Explanation**: Retrieves the deployment strategy type (e.g., RollingUpdate or Recreate).
+
+![Alt text](images/3.png)
+
+---
+
+### 1(c) Extract the “service” label of the deployment concatenated with the “environment” label of the deployment, with a hyphen (-) in the middle.
+```jq
+.metadata.labels.service + “-” + .metadata.labels.environment
+```
+**Explanation**: Accesses the two label values and concatenates them into a single string. 
+
+![Alt text](images/4.png)
+
+Image proof from local pc.
+
+![Alt text](images/5.png)
