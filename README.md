@@ -8,7 +8,7 @@
 
 ## Overview
 
-This repository contains my solutions for the SavannahTech Support Engineer assessment.  
+This repository contains my solutions for the Port Support Engineer assessment.  
 It covers **Exercises #1–#4** as described in the assignment document, using **real data** from live integrations (no mock data).  
 
 Evidence is provided through screenshots, logs, and test outputs.  
