@@ -1,9 +1,16 @@
-## The repository contains the pdf submission for the Assignment
-
 # Port Support Engineer Assignment
+**Full Name:** Asomugha Divine  
+**Position Applied:** Support Engineer  
+**Date Created:** 2025/11/08  
+**Date Updated:** 2025/11/13  
 
-**Candidate:** Asomugha Divine  
-**Date:** 11/08/2025  
+---
+
+## Overview
+This repository contains my solutions for the Port Support Engineer assessment. The google doc submission for the task can be accessed here  
+[Google Doc Submission](https://docs.google.com/document/d/14hXUTW-TxVFujGxfeL9fkO9iJ3jK5Oxc/edit?usp=sharing&ouid=100421826087392022828&rtpof=true&sd=true)
+
+---
 
 ### Table of Contents
 1. [Exercise #1 – JQ Patterns](#exercise-1--jq-patterns)  
