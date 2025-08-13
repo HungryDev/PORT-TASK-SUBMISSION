@@ -21,9 +21,9 @@
 ```
 **Explanation**: Retrieves the integer value of the current replica count from a Kubernetes Deployment object.
 
-![Alt text](images/1.png)
+![Alt text](images-clear/1.png)
 
-![Alt text](images/2.png)
+![Alt text](images-clear/2.png)
 
 ---
 
@@ -33,7 +33,7 @@
 ```
 **Explanation**: Retrieves the deployment strategy type (e.g., RollingUpdate or Recreate).
 
-![Alt text](images/3.png)
+![Alt text](images-clear/3.png)
 
 ---
 
@@ -43,11 +43,11 @@
 ```
 **Explanation**: Accesses the two label values and concatenates them into a single string. 
 
-![Alt text](images/4.png)
+![Alt text](images-clear/4.png)
 
 Image proof from local pc.
 
-![Alt text](images/5.png)
+![Alt text](images-clear/5.png)
 
 ---
 
@@ -57,9 +57,9 @@ Image proof from local pc.
 ```
 **Explanation**: .fields.subtasks (array of subtasks) and extracts the key of each.
 
-![Alt text](images/6.png)
+![Alt text](images-clear/6.png)
 
-![Alt text](images/7.png)
+![Alt text](images-clear/7.png)
 
 ---
 
@@ -69,47 +69,47 @@ Image proof from local pc.
 2. **Installed Port's GitHub app and authorized repos.**
   
    image below shows the installed getport github application.
-![Alt text](images/8.png)
+![Alt text](images-clear/8.png)
 
 3. **Created Jira project (Excercise2) with Scrum template (company-managed).**
 
    images below shows the created Jira project.  
-   ![Alt text](images/9.png)  
+   ![Alt text](images-clear/9.png)  
 
-   ![Alt text](images/10.png)  
+   ![Alt text](images-clear/10.png)  
    
 4. **Installed Port Ocean Integration for Jira via Helm.**
   
    image below shows the installation instruction for Port Ocean Integration for Jira 
-   ![Alt text](images/11.png)
+   ![Alt text](images-clear/11.png)
 
    image below shows the helm command for the Port Ocean Integrator deployment on Kubernetes.
-   ![Alt text](images/12.png)
+   ![Alt text](images-clear/12.png)
 
    image below shows the Port Ocean Integrator pod running in Kubernetes 
-   ![Alt text](images/13.png)
+   ![Alt text](images-clear/13.png)
 
 5. **Added relation Jira Issue → Repository.**
   
    image below shows the added relation btw Jira issues and GitHub repositories
-   ![Alt text](images/14.png)
+   ![Alt text](images-clear/14.png)
 
 6. **Created matching Jira components for repos.**
 
    images below show the components and the repositories with matching names
-   ![Alt text](images/15.png)
+   ![Alt text](images-clear/15.png)
    
-   ![Alt text](images/16.png)
+   ![Alt text](images-clear/16.png)
 
 7. **Updated Jira integration mapping.**
 
    image below shows the Jira issue updated mapping.  
-   ![Alt text](images/17.png)
+   ![Alt text](images-clear/17.png)
 
    image below shows the Audit Log to show that the mapping works  
-   ![Alt text](images/18.png)
+   ![Alt text](images-clear/18.png)
 
-   ![Alt text](images/19.png)
+   ![Alt text](images-clear/19.png)
 
 ---
 
@@ -118,11 +118,11 @@ Image proof from local pc.
 1. **Added the aggregation property named openPrs**
    
    image below shows the added Aggregation property 
-   ![Alt text](images/20.png)
+   ![Alt text](images-clear/20.png)
 
    Images below show the steps for the Aggregation property setup
-   ![Alt text](images/21.png)
-   ![Alt text](images/22.png)
+   ![Alt text](images-clear/21.png)
+   ![Alt text](images-clear/22.png)
 
 2. **Added the scorecard logic to the Repository blueprint**
 ```jq
@@ -201,12 +201,12 @@ Image proof from local pc.
   ```
    
    image below shows the scorecard for the repository EagleEye with 1 open PR 
-   ![Alt text](images/23.png)
+   ![Alt text](images-clear/23.png)
     
    image below shows the scorecard for the repository public-apis with 6 open PR 
-   ![Alt text](images/24.png)
+   ![Alt text](images-clear/24.png)
    
-   ![Alt text](images/25.png)
+   ![Alt text](images-clear/25.png)
 
 
 ## Exercise #4 – GitHub Workflow Troubleshooting
