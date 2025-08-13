@@ -7,8 +7,13 @@
 ---
 
 ## Overview
-This repository contains my solutions for the Port Support Engineer assessment. The google doc submission for the task can be accessed here  
-[Google Doc Submission](https://docs.google.com/document/d/14hXUTW-TxVFujGxfeL9fkO9iJ3jK5Oxc/edit?usp=sharing&ouid=100421826087392022828&rtpof=true&sd=true)
+
+This repository contains my solutions for the SavannahTech Support Engineer assessment.  
+It covers **Exercises #1–#4** as described in the assignment document, using **real data** from live integrations (no mock data).  
+
+Evidence is provided through screenshots, logs, and test outputs.  
+All sensitive credentials have been removed.  
+The google doc submission for the task can be accessed here [Google Doc Submission](https://docs.google.com/document/d/14hXUTW-TxVFujGxfeL9fkO9iJ3jK5Oxc/edit?usp=sharing&ouid=100421826087392022828&rtpof=true&sd=true)
 
 ---
 
@@ -22,33 +27,56 @@ This repository contains my solutions for the Port Support Engineer assessment. 
 
 ## Exercise #1 – JQ Patterns
 
-### 1(a) Extract current replica count
+### 1(a) Extract current replica count  
+**Jq Pattern**:  
 ```jq
 .spec.replicas
 ```
-**Explanation**: Retrieves the integer value of the current replica count from a Kubernetes Deployment object.
+**Explanation**:  
+Retrieves the integer value of the current replica count from a Kubernetes Deployment object.  
 
+**OutPut**:  
+```
+1
+```  
+**Image Evidence**:    
 ![Alt text](images-clear/1.png)
 
 ![Alt text](images-clear/2.png)
 
 ---
 
-### 1(b) Extract deployment strategy
+### 1(b) Extract deployment strategy  
+**Jq Pattern**:  
 ```jq
 .spec.strategy.type
 ```
-**Explanation**: Retrieves the deployment strategy type (e.g., RollingUpdate or Recreate).
+**Explanation**:  
+Retrieves the deployment strategy type (e.g., RollingUpdate or Recreate).  
 
+**OutPut**:  
+```
+RollingUpdate
+```
+**Image Evidence**:  
 ![Alt text](images-clear/3.png)
 
 ---
 
-### 1(c) Extract the “service” label of the deployment concatenated with the “environment” label of the deployment, with a hyphen (-) in the middle.
+### 1(c) Extract the “service” label of the deployment concatenated with the “environment” label of the deployment, with a hyphen (-) in the middle.  
+**Jq Pattern**:  
 ```jq
 .metadata.labels.service + “-” + .metadata.labels.environment
 ```
-**Explanation**: Accesses the two label values and concatenates them into a single string. 
+**Explanation**:  
+Accesses the two label values and concatenates them into a single string.  
+
+**OutPut**:  
+```
+authorization-production-gcp-1
+```
+
+**Image Evidence**:  
 
 ![Alt text](images-clear/4.png)
 
@@ -59,10 +87,32 @@ Image proof from local pc.
 ---
 
 ### 2 Extract all subtask issue IDs
+**Jq Pattern**:  
 ```jq
 [.fields.subtasks[].key]
 ```
-**Explanation**: .fields.subtasks (array of subtasks) and extracts the key of each.
+**Explanation**:  
+.fields.subtasks (array of subtasks) and extracts the key of each.  
+
+**OutPut**:  
+```
+[
+  "SAMPLE-3894",
+  "SAMPLE-3895",
+  "SAMPLE-3896",
+  "SAMPLE-3897",
+  "SAMPLE-3898",
+  "SAMPLE-3899",
+  "SAMPLE-3900",
+  "SAMPLE-3902",
+  "SAMPLE-3904",
+  "SAMPLE-3901",
+  "SAMPLE-3905",
+  "SAMPLE-3906",
+  "SAMPLE-3907"
+]
+```
+**Image Evidence**:   
 
 ![Alt text](images-clear/6.png)
 
