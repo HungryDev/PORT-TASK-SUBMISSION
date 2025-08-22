@@ -144,21 +144,24 @@ Image proof from local pc.
    ![Alt text](images-clear/12.png)
 
    image below shows the Port Ocean Integrator pod running in Kubernetes 
-   ![Alt text](images-clear/13.png)
+   ![Alt text](images-clear/13.png)  
 
-5. **Added relation Jira Issue → Repository.**
+   image below shows evidence of the connected Jira and Github datasources 
+   ![Alt text](images-clear/data-sources.png)  
+
+6. **Added relation Jira Issue → Repository.**
   
    image below shows the added relation btw Jira issues and GitHub repositories
    ![Alt text](images-clear/14.png)
 
-6. **Created matching Jira components for repos.**
+7. **Created matching Jira components for repos.**
 
    images below show the components and the repositories with matching names
    ![Alt text](images-clear/15.png)
    
    ![Alt text](images-clear/16.png)
 
-7. **Updated Jira integration mapping.**
+8. **Updated Jira integration mapping.**
 
    image below shows the Jira issue updated mapping.  
    ![Alt text](images-clear/17.png)
