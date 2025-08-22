@@ -277,9 +277,10 @@ Wrapping the whole expression in [...] collects the results into an array.
    ![Alt text](images-clear/23.png)
     
    image below shows the scorecard for the repository public-apis with 6 open PR 
-   ![Alt text](images-clear/24.png)
-   
-   ![Alt text](images-clear/25.png)
+   ![Alt text](images-clear/24.png)  
+
+   image below shows the proof of repositories with bronze, silver and gold scorecards. 
+   ![Alt text](images-clear/score-cards.png)
 
 
 ## Exercise #4 – GitHub Workflow Troubleshooting
