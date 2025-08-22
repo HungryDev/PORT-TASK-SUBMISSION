@@ -147,7 +147,7 @@ Image proof from local pc.
    ![Alt text](images-clear/13.png)  
 
    image below shows evidence of the connected Jira and Github datasources 
-   ![Alt text](images-clear/data-sources.png)  
+   ![Alt text](images-clear/data-sources2.png)  
 
 6. **Added relation Jira Issue → Repository.**
   
