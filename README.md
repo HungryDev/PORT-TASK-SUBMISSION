@@ -103,7 +103,7 @@ Image proof from local pc.
 The leading . represents the root of the JSON object.  
 .fields moves into the fields object of the issue.  
 .subtasks accesses the subtasks array inside fields.  
-[] iterates over each element in the subtasks array.  
+[ ] iterates over each element in the subtasks array.  
 .key retrieves the key field of each subtask (the subtask issue ID).  
 Wrapping the whole expression in [...] collects the results into an array.  
 
