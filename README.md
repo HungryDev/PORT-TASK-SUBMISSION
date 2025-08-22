@@ -30,7 +30,7 @@ The google doc submission for the task can be accessed here [Google Doc Submissi
 ### 1(a) Extract current replica count  
 **Jq Pattern**:  
 ```jq
-.spec.replicas
+.status.replicas
 ```
 **Explanation**:  
 Retrieves the integer value of the current replica count from a Kubernetes Deployment object.  
