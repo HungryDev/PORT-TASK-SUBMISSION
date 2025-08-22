@@ -194,7 +194,7 @@ Wrapping the whole expression in [...] collects the results into an array.
    ![Alt text](images-clear/20.png)
 
    Images below show the steps for the Aggregation property setup
-   ![Alt text](images-clear/21.png)
+   ![Alt text](images-clear/aggregation.png)
    ![Alt text](images-clear/22.png)
 
 2. **Added the scorecard logic to the Repository blueprint**
