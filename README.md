@@ -40,9 +40,7 @@ Retrieves the integer value of the current replica count from a Kubernetes Deplo
 1
 ```  
 **Image Evidence**:    
-![Alt text](images-clear/1.png)
-
-![Alt text](images-clear/2.png)
+![Alt text](images-clear/staus-replicas.png)
 
 ---
 
@@ -52,7 +50,9 @@ Retrieves the integer value of the current replica count from a Kubernetes Deplo
 .spec.strategy.type
 ```
 **Explanation**:  
-Retrieves the deployment strategy type (e.g., RollingUpdate or Recreate).  
+The leading . represents the root of the JSON object.  
+.status moves into the status field of the Deployment object.  
+.replicas then accesses the replicas field inside status, which holds the current replica count.  
 
 **OutPut**:  
 ```
