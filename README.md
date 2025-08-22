@@ -33,7 +33,9 @@ The google doc submission for the task can be accessed here [Google Doc Submissi
 .status.replicas
 ```
 **Explanation**:  
-Retrieves the integer value of the current replica count from a Kubernetes Deployment object.  
+The leading . represents the root of the JSON object.  
+.status moves into the status field of the Deployment object.  
+.replicas then accesses the replicas field inside status, which holds the current replica count.   
 
 **OutPut**:  
 ```
@@ -51,8 +53,9 @@ Retrieves the integer value of the current replica count from a Kubernetes Deplo
 ```
 **Explanation**:  
 The leading . represents the root of the JSON object.  
-.status moves into the status field of the Deployment object.  
-.replicas then accesses the replicas field inside status, which holds the current replica count.  
+.spec moves into the spec field of the Deployment object, which defines the specification of the Deployment.  
+.strategy accesses the strategy configuration within spec.  
+.type retrieves the type field of the strategy (e.g., RollingUpdate or Recreate).  
 
 **OutPut**:  
 ```
@@ -68,8 +71,13 @@ RollingUpdate
 ```jq
 .metadata.labels.service + “-” + .metadata.labels.environment
 ```
-**Explanation**:  
-Accesses the two label values and concatenates them into a single string.  
+**Explanation**:   
+The leading . represents the root of the JSON object.  
+.metadata moves into the metadata field of the Deployment object.  
+.labels accesses the labels field inside metadata, which contains key–value label pairs.  
+.service retrieves the value of the service label.  
+.environment retrieves the value of the environment label.  
+The + "-" + concatenates the two label values, inserting a hyphen (-) between them.  
 
 **OutPut**:  
 ```
@@ -92,7 +100,12 @@ Image proof from local pc.
 [.fields.subtasks[].key]
 ```
 **Explanation**:  
-.fields.subtasks (array of subtasks) and extracts the key of each.  
+The leading . represents the root of the JSON object.  
+.fields moves into the fields object of the issue.  
+.subtasks accesses the subtasks array inside fields.  
+[] iterates over each element in the subtasks array.  
+.key retrieves the key field of each subtask (the subtask issue ID).  
+Wrapping the whole expression in [...] collects the results into an array.  
 
 **OutPut**:  
 ```
